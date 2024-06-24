@@ -1,9 +1,127 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>MY FullStack CheatSheet</title>
+        <link href="./styles.css" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <div class="logo">
+            <h1>Full Stack Cheatsheet</h1>
+        </div>
+        <nav>
+            <ul>
+                <li >Contact</li>
+                <li >About</li>
+                <li >More</li>
+            </ul>
+        </nav>
+      </header>
+      
+      <div class="table-tags">
+        <h1>Table Tags</h1>
+        <table>
+            <tr>
+              <th>Tags</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td class="left">To create the table outline</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td >To create rows in the table </td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td >Add data to the table precisly to the row, will be placed in columns next to each other</td>
+            </tr>
+            <tr>
+                <td class="white">&lt;th&gt;</td>
+                <td >Creates the heading and seperates it from rest of the data by making it aittle bold</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td >Seperates the head of the table from rest of the table</td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td >Sepeartes the body of the table from rest of the table, normally containes the data that belong to the column heading topics column by coumn</td>
+            </tr>
+            <tr>
+                <td>&lt;tfooter&gt;</td>
+                <td >Seperates the footer from the rest of the table.</td>
+            </tr>
+        </table>
+      </div>
+      
+      <div class="image">
+        <p>Table - Parts:</p>
+      <img src="./table-parts.png">
+      </div>
+      <div class="notes">
+    <h1>
+        Borders in a table : <br><br>
+        <ul>
+            You can use border (border:1px solid black) css rule to give borders to the table. <br><br>
+            You can use (border-collapse:collapse) css property and value to make the border single line<br>intead of double.<br><br>
+        </ul>
+        Border-Style:
+    </h1>
+    <img src="./border.png"> <br><br>
+   <h1> Border Rowspan & Colspan:</h1><br><br><br>
 
-<body>
-  <h1>YOUR NAME</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <table>
+        <tr>
+            <td rowspan="2">cell 1</td>
+            <td>Cell2</td>
+            <td>cell 3</td>
+        </tr>
+        <tr>
+            <td>cell 4</td>
+            <td>cell5</td>
+            <td>cell 6</td>
+        </tr>
+    </table><br><br>
+<h1>Above table shows how rowspan looks like<br>
+Code:</h1> <br>
+<h1>&lt;td rowspan=&quot;2&quot;&gt; cell1 &lt;/td&gt;</h1><br><br>
 
+<table>
+    <tr>
+        <td colspan="3">Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+    </tr>
+    <tr>
+        <td >Cell 4</td>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+    </tr>
+</table><br><br>
+<h1>Above table shows how colspan looks like</h1><br>
+<h1>Code:</h1><Code:><br>
+<h1>&lt;td colspan=&quot;3&quot;&gt; cell1 &lt;/td&gt;<h1><br><br>
+
+<table>
+    <tr>
+        <td id="one">Cell 1</td>
+        <td>Cell 2</td>
+    </tr>
+    <tr>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+    </tr>
+</table><br><br>
+<h1>Above table shows how to add color to the Cell<br><br>
+Code in html(CSS inline):
+&lt;td bgcolor=&quot;blue&quot;&gt; cell1 &lt;/td&gt;<br><br>
+Code in CSS: selector{color:blue}</h1>
+
+   
+      </div>
+
+      
+    </body>
 </html>
